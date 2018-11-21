@@ -1,0 +1,215 @@
+a[accesskey]: after {margin: 0 0 0 10px; content: "[" attr(accesskey) "]";}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+    box-sizing: border-box;
+    font: 16px sans-serif;
+    overflow: hidden;
+    color: #FFF;
+}
+
+body {
+    background-image: url(bg.jpg);
+}
+
+@keyframes slider{
+    
+        0%{
+            left: 0;
+        }
+        
+        20%{
+            left: 0;
+        }
+        
+        40%{
+            left: -100%;
+        }
+        
+        60%{
+            left: -100%;
+        }
+        
+        80%{
+            left: -200%;
+        }
+        
+        100%{
+            left: -200%;
+        }
+    }
+    
+    .slider{
+        position: absolute;
+        width: 75%;
+        height: 70%;
+        left: 12.5%;
+        overflow: hidden;
+        border: 3px solid black;
+    }
+    
+    .slider .figure{
+        position: relative;
+        width: 500%;
+        height: 100%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+    
+    .slider .figure img{
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    nav ul {
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li a {
+        padding: 15px;
+        display: block;
+        text-transform: uppercase;
+      }
+      @media (max-width: 768px) {
+        nav ul {
+          justify-content: space-between;
+        }
+      }
+      @media (max-width: 480px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+    footer{
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        height: 20%;
+        background-color: #00868B;
+    }
+    
+    footer #endereco{
+        position: absolute;
+        top: 5%;
+        left: 12.5%;
+        font-size: 130%;
+    }
+    
+    footer  #enderecoLista{
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        text-align: center;
+        list-style: none;
+    }
+    
+    footer #enderecoLista li a{
+        color: #CDC9C9;
+        font-size: 100%;
+    }
+
+    footer iframe{
+        position: absolute;
+        left: 65%;
+        top: 5%;
+        width: 30%;
+        height: 85%;
+    }
+
+    footer #redesocial{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        font-size: 130%;
+    }
+
+    footer #f{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 5%;
+        height: 50%;
+    }
+
+    footer #t{
+        position: absolute;
+        top: 30%;
+        left: 33%;
+        width: 5%;
+        height: 50%;
+    }
+
+    footer #i{
+        position: absolute;
+        top: 30%;
+        left: 41%;
+        width: 5%;
+        height: 50%;
+    }
+
+    footer #s{
+        position: absolute;
+        top: 30%;
+        left: 49%;
+        width: 5%;
+        height: 50%;
+    }
+
+    #l{
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        width: 15%;
+        height: 10%;
+    }
+
+    h1{
+        position: absolute;
+        left: 35%;
+        top: 40%;
+        font-size: 150%;
+    }
+
+    #formulario{
+        position: absolute;
+        top: 20%; 
+        font-size: 150%;
+        left: 40%; 
+    }
+    
+    #form label{ 
+        position: relative;
+        font-family: 'andalus'; 
+        font-size: 120%;
+    }
+    
+    #form{
+        position: absolute; 
+        top: 25%; 
+        font-family: 'andalus';
+        left: 40%;   	
+    }
+    
+    #form input, #form textarea{
+        font-family: 'andalus';
+        color: black; 
+    }
+
+    #texto{
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        left: 10%;
+        font-family: 'andalus';
+    }
